@@ -1,0 +1,14 @@
+<div class="row" style="margin-left: auto">
+    <button type="button" id="btnPlay" class="btn btn-success pull-right icon-play-circle" style="margin-right: 20px;" (click)="start()"></button>
+    <button type="button" id="btnPause" class="btn btn-success pull-right icon-pause" style="margin-right: 20px;" (click)="pause()"></button>
+    <button type="button" id="btnVolumeUp" class="btn btn-success pull-right icon-volume-up" style="margin-right: 20px;" (click)="volumeUp()"></button>
+    <button type="button" id="btnVolumeDown" class="btn btn-success pull-right icon-volume-down" style="margin-right: 20px;" (click)="volumeDown()"></button>
+    <button type="button" id="btnStop" class="btn btn-success pull-right icon-stop" style="margin-right: 20px;" (click)="stop()"></button>
+    <button type="button" id="btnHeadPhones" class="btn btn-success pull-right icon-headphones" style="margin-right: 20px;" (click)="enableMute()"></button>
+    <button type="button" id="btnHandUp" class="btn btn-success pull-right icon-hand-up" style="margin-right: 20px;" (click)="up()">
+        <span #span_up></span>
+    </button>
+    <button type="button" id="btnHandDown" class="btn btn-success pull-right icon-hand-down" style="margin-right: 20px;" (click)="down()">
+        <span #span_down></span>
+    </button>
+</div>

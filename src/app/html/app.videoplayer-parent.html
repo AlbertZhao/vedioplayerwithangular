@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Player</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+	<link rel="stylesheet" href="../css/playerstyle.css"> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="header clearfix text-center">
+					<h3 class="text-muted ">This is my first HTML5 video player.</h3>
+				</div>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-7">
+
+				<div class="wrapper">
+					<!-- paly component-->
+					<app-play [playFlag]="playFlag" [playItem]="playItem"></app-play>
+
+					<!-- controls component-->
+					<app-controls (startEvent)='receiveFalgFromChild($event)' ></app-controls>
+				</div>
+		    </div>
+		    <div class="col-sm-3" style="align-self: auto">
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+
+				<!-- player list component-->
+				<app-playlist (playListEvent)='receivePlayItemFromChild($event)' ></app-playlist>
+			</div>
+      	</div>
+		<div class="row">
+			<div class="col">
+				<hr>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

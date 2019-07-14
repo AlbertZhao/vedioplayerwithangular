@@ -1,0 +1,6 @@
+<div class="row playlist">
+    <li *ngFor="let playlistItem of playlists">
+            <span class="playlistItem" (click)="triggerPlay(playlistItem)" id="{{playlistItem.id}}">{{playlistItem.title}}</span>
+           
+    </li>
+</div>
